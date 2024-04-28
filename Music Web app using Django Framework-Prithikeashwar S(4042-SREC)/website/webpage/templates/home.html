@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Homepage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #343a40 !important;
+    }
+
+    .navbar-brand, .navbar-text {
+      color: #ffffff !important;
+    }
+
+    .search-bar {
+      background-color: #ffffff;
+      border-radius: 20px;
+    }
+
+    .search-btn {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .card {
+      margin-top: 20px;
+      background-color: #ffffff;
+    }
+
+    .card-title {
+      color: #343a40;
+    }
+
+    .profile-tab {
+      background-color: #17a2b8;
+      color: #ffffff;
+    }
+
+    .login-btn, .logout-btn {
+      background-color: #28a745;
+      color: #ffffff;
+    }
+    .card-img-top
+    {
+      height: 400px;
+    }
+    .btn
+    {
+      border-radius: 20px;
+      border-color: black;
+      border-style: solid;
+      transition: 0.4s;
+    }
+    .btn:hover
+    {
+      background-color: #00000052;
+      color: white;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Azim Music</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-light login-btn">Login</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-outline-light logout-btn">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'images/summertimesadness.jpeg' %}" alt="Album Cover" class="img">
+        <div class="card-body">
+          <h5 class="card-title">Summertime Sadness</h5>
+          <p class="card-text">Singer : Lana Del Rey</p>
+          <p class="card-text">Lyricists : Rick Nowels,Lana del Rey</p>
+          <button class="btn">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'images/fairytale.jpg' %}" alt="Album Cover" class="img">
+        <div class="card-body">
+          <h5 class="card-title">Fairytale</h5>
+          <p class="card-text">Singer : Alexander Rybak</p>
+          <p class="card-text">Lyricists : Alexander Rybak</p>
+          <button class="btn">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'images/desperado.jpg' %}" alt="Album Cover" class="img">
+        <div class="card-body">
+          <h5 class="card-title">Desperado</h5>          
+          <p class="card-text">Singer : Raghav and Tesher</p>
+          <p class="card-text">Lyricists : Don Henley,Glenn Frey</p>
+          <button class="btn">
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
